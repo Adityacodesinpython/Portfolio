@@ -3,6 +3,8 @@ A 3D Portfolio project utilizing popular JS frameworks like ThreeJS, React & Nod
 
 ## Getting Started 
 In the project directory, you can run:
+### `npm i`
+Installs all the necessary dependencies
 
 ### `npm start`
 
