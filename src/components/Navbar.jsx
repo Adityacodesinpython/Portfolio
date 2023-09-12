@@ -9,9 +9,9 @@ function Navbar(){
         <div className="navbar">
             <ul className="nav-list">
                 <li><a href="#"><ArticleIcon  sx={{color:"white", height:"18px"}}/> My Portfolio</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="https://github.com/Adityacodesinpython">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/aditya-sampathkumar-abab94280/">Linkedin</a></li>
             </ul>
         </div>
     )

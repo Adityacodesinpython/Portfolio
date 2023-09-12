@@ -24,6 +24,7 @@
     "react-scripts": "5.0.1",
     "styled-components": "^6.0.7",
     "three": "^0.156.1",
+    "vanilla-tilt": "^1.8.1",
     "web-vitals": "^2.1.4",
     "webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-0.5.8.tgz"
   },

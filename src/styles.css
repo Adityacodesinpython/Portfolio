@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .container{
    
     background: rgb(170,0,0);
@@ -59,6 +63,20 @@
     margin-top: 25px;
 }
 
+.home-button{
+    background: rgb(95, 94, 94);
+  color: white;
+  border: none;
+  border-radius: 900px;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  padding: 12px 20px;
+  min-width: 28px;
+  text-align: center;
+  text-decoration: none;
+}
+
 .home-link{
     text-decoration: none;
     color: white;
@@ -69,9 +87,10 @@
 .middlefeed{
     display: flex;
     justify-content: center;
+    gap: 10%;
     align-items: center;
     height: 100vh;
-    padding: 0 5%;
+    padding: 2% 5%;
 }
 .middle-cube{
     height: 90%;
@@ -99,10 +118,17 @@
     width: 500px;
     border-radius: 10px;
     padding: 1rem;
-    box-shadow: 0 0 10px 10px white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blue(5px);
+    
 }
 
 .profilepic{
@@ -126,7 +152,11 @@
     font-family: 'Space Mono', monospace;
 
 }
-
+@media only screen and (max-width:500px){
+    .textbox{
+        font-size: 0.8rem;
+    }
+}
 .textbox h1{ text-align: center; }
 .textbox ul { list-style-type: none; }
 .textbox li { margin: 7px 0; }
@@ -171,11 +201,15 @@
         align-items: center;
     }
     .home-image{
-        
-        width: 100%;
+        width: auto;
+    }
+    .home-canvas{
+        height: 100% !important;
     }
 }
 
+
+.home-canvas{height: 100%;}
 .works_title{
     flex: 1;
     display: flex;

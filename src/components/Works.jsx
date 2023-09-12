@@ -3,20 +3,18 @@ import styled from "styled-components";
 import WebDesign from "./WebDesign";
 import ReactDesign from "./ReactDesign";
 
-const data = ["Web Design", "React", "Backend Dev", "Javascript", "Animations"];
+const data = ["React", "Web Design", "Backend Dev", "Javascript", "Animations"];
 
 const Section = styled.div`
   height: auto;
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
-
-  
 `;
 const Container = styled.div`
   height:100%;
   width: 100%;
-  padding:0 5%;
+  padding:5%;
   display: flex;
   justify-content: space-between;
 `;
@@ -59,6 +57,9 @@ const ListItem = styled.a`
   @media only screen and (max-width:1600px){
     font-size: 70px;
   }
+  @media only screen and (max-width:500px){
+    font-size: 40px;
+  }
 `;
 const Right = styled.div`
   flex: 1;
@@ -71,7 +72,7 @@ const Right = styled.div`
 `;
 
 function Works() {
-  const [work, setWork] = useState("Web Design");
+  const [work, setWork] = useState("React");
 
   return (
     <Section>
@@ -86,10 +87,10 @@ function Works() {
           </List>
         </div>
         <Right>
-          {work === "Web Design" ? (
-            <WebDesign />
-          ) : (
+          {work === "React" ? (
             <ReactDesign />
+          ) : (
+            <WebDesign />
           )}
         </Right>
       </Container>

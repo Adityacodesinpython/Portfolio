@@ -13,7 +13,7 @@ const Section = styled.div`
   justify-content: space-between;
 
   @media only screen and (max-width: 1341px) {
-    height: 200vh;
+    height: 100vh;
     width:100%;
   }
   
@@ -29,6 +29,7 @@ const Left = styled.div`
   @media only screen and (max-width: 1341px) {
     flex: 1;
     align-items: center;
+    margin-top:10%;
   }
 `;
 
@@ -39,21 +40,8 @@ const Title = styled.h1`
 
   @media only screen and (max-width: 1341px) {
     text-align: center;
+    font-size:2rem;
   }
-`;
-
-const Button = styled.button`
-  background: rgb(95, 94, 94);
-  color: white;
-  border: none;
-  border-radius: 900px;
-  cursor: pointer;
-  padding: 10px;
-  display: inline-block;
-  padding: 12px 20px;
-  min-width: 28px;
-  text-align: center;
-  text-decoration: none;
 `;
 
 const Right = styled.div`
@@ -73,11 +61,12 @@ function HomeFeed() {
           <Title>Hi!</Title>
           <Title>How are you today?</Title>
           <div className="home-list">
-            <Button>Resume</Button>
-            <a href="https://google.com" className="home-link">Learn More</a>
+            <a href="https://docs.google.com/document/d/e/2PACX-1vSpFWBnCKc7hMsMWgQPCJEh8urAODuidbmpAF_z_8OYSCt2fY1tuWfyn77OrG_9ps5DQRXfxdJeVdFp/pub" className="home-button" download>Resume</a>
+            <a href="#middle" className="home-link">Learn More</a>
           </div>
         </Left>
         <Right>
+        <div className="home-canvas">
           <Canvas>
             <Suspense fallback={null}>
               <OrbitControls enableZoom={false} />
@@ -93,7 +82,7 @@ function HomeFeed() {
               </Sphere>
             </Suspense>
           </Canvas>
-
+          </div>
           <div className="home-image"></div>
         </Right>
       </div>

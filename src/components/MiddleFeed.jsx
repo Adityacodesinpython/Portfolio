@@ -4,12 +4,12 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, PerspectiveCamera, RenderTexture } from '@react-three/drei'
 import {Text} from '@react-three/drei'
 import Cube from './Cube'
-
+import VanillaTilt from 'vanilla-tilt'
 
 function MiddleFeed(){
-
     return(
-        <div className='middlefeed' >
+        
+        <div id='middle' className='middlefeed' >
             <div className='middle-cube'>
                 <Canvas camera={{fov:25, position:[5,5,5]}}>
                     <OrbitControls enableZoom={false} autoRotate/>
@@ -30,8 +30,12 @@ function MiddleFeed(){
                     </ul>
                 </div>
             </div>
+            <script>{VanillaTilt.init(document.querySelector(".aboutme"),{
+        max:25,
+        speed:400,
+    })};</script>
         </div>
-
+        
     )
 }
 
