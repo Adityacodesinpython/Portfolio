@@ -165,7 +165,8 @@ html{
     background-image: url("../public/moon.png");
     background-repeat: no-repeat;
     background-size:contain;
-    aspect-ratio: 1/1;
+    background-position: center;
+
     height: 90%;
     position: absolute;
     top: 0;

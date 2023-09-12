@@ -1,11 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+=======
+# My Portfolio
+A 3D Portfolio project utilizing popular JS frameworks like ThreeJS, React & Node
+>>>>>>> 8b67dc5e2f7658008483b41664857cb4f3c8b322
 
+## Getting Started 
 In the project directory, you can run:
+### `npm i`
+Installs all the necessary dependencies
 
 ### `npm start`
 
@@ -14,6 +22,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+<<<<<<< HEAD
 
 ### `npm test`
 
@@ -73,3 +82,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # Portfolio
 My Portfolio
 >>>>>>> 1873acbe0b05c780454bcc0579aad1265b654f16
+=======
+>>>>>>> 8b67dc5e2f7658008483b41664857cb4f3c8b322
