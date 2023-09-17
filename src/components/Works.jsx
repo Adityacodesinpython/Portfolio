@@ -3,7 +3,7 @@ import styled from "styled-components";
 import WebDesign from "./WebDesign";
 import ReactDesign from "./ReactDesign";
 
-const data = ["React", "Web Design", "Backend Dev", "Javascript", "Animations"];
+const data = ["Guitar", "Casio", "Reading", "Lorem Ipsum", "Lorem Ipsumm"];
 
 const Section = styled.div`
   height: auto;
@@ -23,16 +23,10 @@ const List = styled.div`
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding-left: 1rem;
-  @media only screen and (max-width:950px){
-    margin:auto;
-
-  }
 `;
 const ListItem = styled.a`
   curser: pointer;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: bold;
   cursor: pointer;
   color: transparent;
@@ -55,10 +49,10 @@ const ListItem = styled.a`
     transition: width 0.4s linear;
   }
   @media only screen and (max-width:1600px){
-    font-size: 70px;
+    font-size: 40px;
   }
   @media only screen and (max-width:500px){
-    font-size: 40px;
+    font-size: 20px;
   }
 `;
 const Right = styled.div`
@@ -72,13 +66,15 @@ const Right = styled.div`
 `;
 
 function Works() {
-  const [work, setWork] = useState("React");
+  const [work, setWork] = useState("Guitar");
 
   return (
     <Section>
       <Container>
-        <div className="works_title">
+        <div className="works_title pl-10">
           <List>
+          <h1 className="text-white font-bold text-5xl mb-6">My Hobbies</h1>
+
             {data.map((item) => (
               <ListItem key={item} text={item} onClick={()=>setWork(item)}>
                 {item}
@@ -87,7 +83,7 @@ function Works() {
           </List>
         </div>
         <Right>
-          {work === "React" ? (
+          {work === "Guitar" ? (
             <ReactDesign />
           ) : (
             <WebDesign />

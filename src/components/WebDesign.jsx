@@ -6,7 +6,7 @@ import Lambo from "./Lambo"
 const WebDesign = () => {
   return (
     <Canvas>
-        <Stage environment="city" intensity={1}>
+        <Stage environment="city" intensity={-1}>
             <Lambo />
         </Stage>
         <OrbitControls enableZoom={false} autoRotate/>

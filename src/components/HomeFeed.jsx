@@ -34,7 +34,6 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 3rem;
 
@@ -54,14 +53,13 @@ const Right = styled.div`
 
 function HomeFeed() {
   return (
-    <Section>
+    <Section id="home">
       <Navbar />
       <div className="home-container">
         <Left>
-          <Title>Hi!</Title>
-          <Title>How are you today?</Title>
+          <Title>Hi!<br/>How are you today?</Title>
           <div className="home-list">
-            <a href="https://docs.google.com/document/d/e/2PACX-1vSpFWBnCKc7hMsMWgQPCJEh8urAODuidbmpAF_z_8OYSCt2fY1tuWfyn77OrG_9ps5DQRXfxdJeVdFp/pub" className="home-button" download>Resume</a>
+            <a href="https://drive.google.com/file/d/1vr6YiUq0RzHsBRxvgMZmVztiXJ9IWqEa/view?usp=sharing" className="home-button focus:outline-none focus:ring-2 focus:ring-offset-2" download>Resume</a>
             <a href="#middle" className="home-link">Learn More</a>
           </div>
         </Left>

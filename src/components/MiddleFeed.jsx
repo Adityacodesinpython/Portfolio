@@ -1,42 +1,53 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls, PerspectiveCamera, RenderTexture } from '@react-three/drei'
-import {Text} from '@react-three/drei'
-import Cube from './Cube'
-import VanillaTilt from 'vanilla-tilt'
+import React from "react";
+import styled from "styled-components";
+import { Canvas } from "@react-three/fiber";
+import {
+  OrbitControls,
+  PerspectiveCamera,
+  RenderTexture,
+} from "@react-three/drei";
+import { Text } from "@react-three/drei";
+import Cube from "./Cube";
+import VanillaTilt from "vanilla-tilt";
 
-function MiddleFeed(){
-    return(
-        
-        <div id='middle' className='middlefeed' >
-            <div className='middle-cube'>
-                <Canvas camera={{fov:25, position:[5,5,5]}}>
-                    <OrbitControls enableZoom={false} autoRotate/>
-                    <ambientLight intensity={1}/>
-                    <directionalLight position={[3,2,1]} />
-                    <Cube />
-                </Canvas>
-            </div>
-            <div className='aboutme'>
-                <div className='profilepic'></div>
-                <div className='textbox'>
-                    <h1>Hi! Aditya here</h1>
-                    <ul>
-                        <li>A passionate Web Developer🙇‍♂️</li>
-                        <li>Proficient in major Frontend languages and Frameworks from JS to React💻</li>
-                        <li>Have worked with Mongodb, Express and Nodejs by building realtime useful projects.</li>
-                        <li>Check out more at my github!🚀</li>
-                    </ul>
-                </div>
-            </div>
-            <script>{VanillaTilt.init(document.querySelector(".aboutme"),{
-        max:25,
-        speed:400,
-    })};</script>
+function MiddleFeed() {
+  return (
+    <div id="middle" className="middlefeed">
+      <div className="middle-cube">
+        <Canvas camera={{ fov: 25, position: [5, 5, 5] }}>
+          <OrbitControls enableZoom={false} autoRotate />
+          <ambientLight intensity={1} />
+          <directionalLight position={[3, 2, 1]} />
+          <Cube />
+        </Canvas>
+      </div>
+      <div className="aboutme ">
+        <div className="profilepic h-36 w-36 sm:h-52 sm:w-52"></div>
+        <div className="textbox">
+          <h1>Hi! Aditya here</h1>
+          <ul>
+            <li>A passionate Web Developer🙇‍♂️</li>
+            <li>
+              Proficient in major Frontend languages and Frameworks from JS to
+              React💻
+            </li>
+            <li>
+              Have worked with Mongodb, Express and Nodejs by building realtime
+              useful projects.
+            </li>
+            <li>Check out more at my github!🚀</li>
+          </ul>
         </div>
-        
-    )
+      </div>
+      <script>
+        {VanillaTilt.init(document.querySelector(".aboutme"), {
+          max: 25,
+          speed: 400,
+        })}
+        ;
+      </script>
+    </div>
+  );
 }
 
 export default MiddleFeed;
