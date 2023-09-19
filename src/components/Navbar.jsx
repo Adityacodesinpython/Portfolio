@@ -27,7 +27,7 @@ function Navbar(){
                     <li><a href="#" className="font-semibold text-sm sm:text-md md:text-lg"><ArticleIcon  sx={{color:"white", height:"18px"}}/> My Portfolio</a></li>
                     <li><a href="/"  className="font-semibold text-sm sm:text-md md:text-lg">Home</a></li>
                     <li><a href="https://github.com/Adityacodesinpython"  className="font-semibold text-sm sm:text-md md:text-lg">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/aditya-sampathkumar-abab94280/"  className="font-semibold text-sm sm:text-md md:text-lg">Linkedin</a></li>
+                    <li><a href="https://www.linkedin.com/in/aditya-sampath-kumar-abab94280/"  className="font-semibold text-sm sm:text-md md:text-lg">Linkedin</a></li>
                 </ul>
             </div>
 
